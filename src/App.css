@@ -1,38 +1,140 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,600&display=swap');
+
+
+*{
+  margin-right: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+  font-size: 60%;
+
+}
+body{
+  background-color:#70a1ff ;
+}
+h1{
+  font-size: 21px;
   text-align: center;
+  margin-top: 18px;
+  color: rgb(123, 17, 17);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
 }
+p{
+  margin: 2rem 0;
+  color: rgb(43, 69, 135);
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* .parent{
+  width: 75%;
+  
+} */
+.parent{
+  
+  /* background-color: rgb(142, 199, 110); */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  /* gap: 4rem;
+  border: 3px solid red;
+  margin: 12px; */
+}
+.card{
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: cadetblue;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px  ;
+  border-radius: 0.5rem;
+  color: rgb(39, 44, 35);
+  margin: 2px;
+  border: 2px solid rgb(117, 24, 174);
+}
+.card_btn a{
+  color: rgb(6, 3, 80);
+  font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+}
+.card_btn a:hover{
+  color: hotpink;
+}
+.card_btn{
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card_btn a:last-child:hover{
+  color: azure;
+}
+.card_btn a:last-child{
+  color: blueviolet;
+}
+form{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  text-align: center;
+  background-color: darkgreen;
+  color: azure;
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 2px solid darkslateblue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Pag_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  padding: 0.8rem  2.2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: cyan;
+  color: gray;
+  margin: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.para{
+  font-weight: bold;
+  font-size: 12px;
+}
+@media  (max-width:998px){
+  html{
+    font-size: 55%;
   }
-  to {
-    transform: rotate(360deg);
+  .card{
+    min-width: 45rem;
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 768px){
+  html{
+    font-size: 50%;
+
+  }
+  .card{
+    min-width: 35rem;
+    padding: 2rem;
   }
 }
