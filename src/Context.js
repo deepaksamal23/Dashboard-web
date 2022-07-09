@@ -6,7 +6,7 @@ import reducer from "./reducer"
 let API =('https://hn.algolia.com/api/v1/search?')
 const initialState = {
        isloading:true,
-      query: "CSS",
+      query: "",
       page: 0,
       nbPages: 0,
       hits: []
